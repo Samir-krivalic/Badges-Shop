@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Badge Shop</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header id="header">
+    <nav class="navbar navbar-expand-lg px-4">
+      <!-- navbar  -->
+      <!--
+  https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+  Creative Commons (Attribution 3.0 Unported);
+  https://www.iconfinder.com/korawan_m
+       -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="#header">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#store">store</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3">
+              <img src="img/phone.png" alt="">
+            </span>
+            <p class="mb-0">+ 000 123 456</p>
+          </div>
+
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3">
+              <img src="img/cart.png" alt="">
+            </span>
+            <p class="mb-0 text-capitalize">
+              <span id="item-count">0 </span>
+              items - €
+              <span class="item-total">0</span>
+            </p>
+          </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- banner -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">
+            welcome to our <strong class="banner-title">badges shop</strong>
+          </h1>
+          <a href="#store" class="btn banner-link text-uppercase y-2">check it</a>
+        </div>
+        <!-- cart -->
+        <div class="cart" id="cart">
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+
+          </div>
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>total</h5>
+            <h5>€ <strong id="cart-total" class="font-weight-bold">0</strong></h5>
+          </div>
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-white text-uppercase">clearcart</a>
+            <a href="#" id="clear-cart" class="btn btn-purple text-uppercase">checkout</a>
+          </div>
+        </div>
+        <!-- end of cart -->
+      </div>
+    </div>
+    <!--end of  banner  -->
+  </header>
+    <!--end of header -->
+    <!-- about section -->
+    <section class="about py-5" id="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">about <strong class="banner-title ">us</strong></h1>
+          <p class="my-4 text-muted w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem temporibus porro culpa fugiat nulla soluta dolores tenetur asperiores corrupti, quis ut quasi sed veritatis exercitationem distinctio sequi ab qui quo quaerat impedit est tempore rerum, repellendus. Aliquid nemo dignissimos quibusdam libero quas, doloribus sint ex eum, porro eaque natus placeat quis similique accusantium dolores at aliquam ullam repellat ea excepturi. Vero?
+          </p>
+          <a href="#" class="btn btn-purple text-uppercase ">check it</a>
+
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="img/about-badge.jpg" class="img-fluid" alt="badge-about">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of about section -->
+  <!-- store -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">our <strong class="banner-title">store</strong>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+          <a href="#" class="btn btn-purple text-uppercase filter-btn m-2 data-filter="all"">all
+          </a>
+          <a href="#" class="btn btn-purple text-uppercase filter-btn m-2 data-filter="all"">transcontinental
+          </a>
+          <a href="#" class="btn btn-purple text-uppercase filter-btn m-2 data-filter="all"">euro
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3 field">
+              <div class="input-group-prepend">
+                <span class="input-group-text search-box" id="search-icon">
+                  <i class="i fas fa-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="search" id="search-item">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- store items -->
+      <div class="row store-items" id="store-items">
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/albania.jpg" class="card-img-top store-img" alt="albania">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">albania badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/andora.jpg" class="card-img-top store-img" alt="andora">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">andora badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/armenia.jpg" class="card-img-top store-img" alt="armenia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">armenia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/austria.jpg" class="card-img-top store-img" alt="austria">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">austria badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/azerbaijan.png" class="card-img-top store-img" alt="azerbaijan">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">azerbaijan badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/belarus.jpg" class="card-img-top store-img" alt="belarus">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">belarus badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">6.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/belgium.jpg" class="card-img-top store-img" alt="belgium">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">belgium badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/bosnia.jpg" class="card-img-top store-img" alt="bosnia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">bosnia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/bulgaria.jpg" class="card-img-top store-img" alt="bulgaria">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">bulgaria badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/croatia.jpg" class="card-img-top store-img" alt="croatia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">croatia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/cyprus.jpg" class="card-img-top store-img" alt="cyprus">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">cyprus badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/czech republic.jpg" class="card-img-top store-img" alt="cr">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">czech r. badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/denmark.jpg" class="card-img-top store-img" alt="denmark">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">denmark badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/england.jpg" class="card-img-top store-img" alt="england">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">england badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/estonia.jpg" class="card-img-top store-img" alt="estonia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">estonia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/finland.jpg" class="card-img-top store-img" alt="finland">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">finland badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/france.jpg" class="card-img-top store-img" alt="france">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">france badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/georgia.jpg" class="card-img-top store-img" alt="georgia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">georgia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">6.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/germany.jpg" class="card-img-top store-img" alt="germany">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">germany badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/greece.jpg" class="card-img-top store-img" alt="greece">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">greece badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">6.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/hungary.jpg" class="card-img-top store-img" alt="hungary">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">hungary badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/iceland.jpg" class="card-img-top store-img" alt="iceland">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">iceland badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/ireland.jpg" class="card-img-top store-img" alt="ireland">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">ireland badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/italy.jpg" class="card-img-top store-img" alt="italy">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">italy badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">7.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/kazakhstan.jpg" class="card-img-top store-img" alt="kazakhstan">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">kazakhstan badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/latvia.jpg" class="card-img-top store-img" alt="latvia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">latvia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/liechtenstein.jpg" class="card-img-top store-img" alt="iceland">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">liechtenstein badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/lithuania.jpg" class="card-img-top store-img" alt="lithuania">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">lithuania badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/luxembourg.jpg" class="card-img-top store-img" alt="luxembourg">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">luxembourg badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/macedonia.jpg" class="card-img-top store-img" alt="macedonia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">macedonia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/malta.jpg" class="card-img-top store-img" alt="malta">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">malta badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/moldova.jpg" class="card-img-top store-img" alt="moldova">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">moldova badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/monaco.jpg" class="card-img-top store-img" alt="monaco">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">monaco badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/montenegro.jpg" class="card-img-top store-img" alt="montenegro">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">montenegro badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/n.ireland.jpg" class="card-img-top store-img" alt="ni">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">n. ireland badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">7.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/netherland.jpg" class="card-img-top store-img" alt="netherland">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">netherland badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/norway.jpg" class="card-img-top store-img" alt="norway">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">norway badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/poland.jpg" class="card-img-top store-img" alt="poland">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">poland badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/portugal.jpg" class="card-img-top store-img" alt="portugal">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">portugal badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/romania.jpg" class="card-img-top store-img" alt="romania">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">romania badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/russia.jpg" class="card-img-top store-img" alt="russia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">russia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/sanmarino.jpg" class="card-img-top store-img" alt="sm">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">san. m badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/scotland.jpg" class="card-img-top store-img" alt="scotland">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">scotland badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/serbia.jpg" class="card-img-top store-img" alt="serbia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">serbia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/slovakia.jpg" class="card-img-top store-img" alt="slovakia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">slovakia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/slovenia.jpg" class="card-img-top store-img" alt="slovenia">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">slovenia badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/spain.jpg" class="card-img-top store-img" alt="spain">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">spain badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">2.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/sweeden.jpg" class="card-img-top store-img" alt="sweeden">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">sweeden badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/switzerland.jpg" class="card-img-top store-img" alt="switzerland">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">switzerland badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/turkey.jpg" class="card-img-top store-img" alt="turkey">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">turkey badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/ukraine.jpg" class="card-img-top store-img" alt="ukraine">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">ukraine badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of single item-->
+        <!-- single items -->
+          <div class="col-10 col-sm-4 col-md-3 col-lg-2 mx-auto my-3 store-item badges data-item="badges"">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/wales.jpg" class="card-img-top store-img" alt="wales">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">wales badge</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">4.99
+                </strong>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- end of single item-->
+    </div>
+      <!-- end of store items -->
+    </div>
+  </section>
+  <!-- end of store -->
+  <!-- advertisment -->
+  <section id="services" class="services py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 card-img-top justify-content-between text-center my-3 mx-auto">
+          <h4 class="text-uppercase my-3 champ-title">collect them all</h4>
+          <img src="img/champion.jpg" id="rounded" alt="champ">
+          <p class="w-75 mx-auto text-left champ-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi delectus temporibus nihil, quibusdam earum dolor magni, vero ipsa fugit impedit suscipit. Reprehenderit at consectetur velit.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-6 card-img-top justify-content-between text-center my-3 mx-auto">
+          <h4 class="text-uppercase my-3 champ-title">there is more coming</h4>
+          <img src="img/flag.jpg" id="rounded" alt="flag">
+          <h5 class="w75 mx-auto champ-text other">Stay tuned</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of services -->
+  <!-- badges -->
+  <section id="badges" class="badges">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">order <strong class="banner-title">badges</strong>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+          <h3 class="py-3">current items</h3>
+          <div class="text-muted">
+            <img src="img/badge-logo.jpg" class="img-fluid adds" alt="">
+            <p class="my-3">all European badges</p>
+            <p class="my-3">low price</p>
+            <p class="my-3">authenticity</p>
+            <button type="button" class="btn btn-purple text-capitalize mb-2">order now</button>
+
+          </div>
+        </div>
+        <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+          <h3 class="py-3">new items</h3>
+          <div class="text-muted">
+            <img src="img/new.jpg" class="img-fluid adds" alt="">
+            <p class="my-3">expanding shop</p>
+            <p class="my-3">flags</p>
+            <p class="my-3">there is more coming</p>
+            <button type="button" class="btn btn-purple text-capitalize mb-2">coming soon</button>
+          </div>
+        </div>
+        <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+          <h3 class="py-3">going global</h3>
+          <div class="text-muted">
+            <img src="img/world.jpg" class="img-fluid adds" alt="">
+            <p class="my-3">export in the whole world</p>
+            <p class="my-3">asia (soon)</p>
+            <p class="my-3">canada (soon)</p>
+            <button type="button" class="btn btn-purple text-capitalize mb-2">coming soon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of badges -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-6 footer-title py-5">
+        <h1 class="text-capitalize text-center">
+          <strong class="banner-title">badger</strong>
+        </h1>
+        <div class="footer-icons mt-3 d-flex justify-content-around flex-wrap">
+          <a href="#" class="footer-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="footer-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="footer-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="footer-icon">
+            <i class="fab fa-google-plus"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+        <h3 class="mb-5">contact</h3>
+        <p class="d-flex flex-wrap">
+          <span class="mr-4 footer-icon">
+            <i class="fas fa-map"></i>
+          </span>
+          <span>
+            486 welcome street, BiH RTN 4812
+          </span>
+        </p>
+        <p class="d-flex flex-wrap">
+          <span class="mr-4 footer-icon">
+            <i class="fas fa-phone"></i>
+          </span>
+          <span>
+            +000 456 789
+          </span>
+        </p>
+        <p class="d-flex flex-wrap">
+          <span class="mr-4 footer-icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>
+            email@email.com
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
